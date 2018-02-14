@@ -1,8 +1,17 @@
 # laravel-favicon
-A Laravel SH Script that generates a favicon across different devices, browsers, and operating systems. 
-
-## This uses realfavicongenerator.net
-No reason to reinvent the wheel, they already have this process down, with solid previews. 
+A Laravel SH Script that generates a favicon across different devices, browsers, and operating systems. This is done by using    realfavicongenerator.net's favicon generator. I mean, there is no reason to reinvent the wheel right? After you product your package there, this script will help you intergrate it into laravel, it does this automatcily by doing the following. 
+  - downloading the package
+  - extracting it to /resources/assets/favicon
+  - creating /resources/views/vendor/laravel-favicon/favicon.blade.php
+  - publihing files to /public/ for use
+  - cleans up file trash it leaves mehind
+  
+After this is done, you may use the blade call below to insert your favicon to your site
+```
+//In some layout file.blade.php
+...
+@includeif('vendor.laravel-favicon.favicon')
+```
 
 ## Step 1
 Go to https://realfavicongenerator.net/ and follow there instructions. 
@@ -38,12 +47,19 @@ Now your all installed and ready to use!
 # Usage
 ## In blade.php files
 to include your favicon html markup, simply use the below @include in your <head>
-`@includeif('vendor.laravel-favicon.favicon')`
+```
+//In some layout file.blade.php
+...
+@includeif('vendor.laravel-favicon.favicon')
+```
 And your all done and ready to use!
   
   
 # Update
 If you need to change or update your favicons, simply rerun the install, as it will overwrite the old one. A helpful combination is to use verisoning that is built in with tehe favicon generator. 
 
-# Future
-In the future I will have this done by webpack, and will be ran each time by npm
+# Future 
+- Have wepback publish sauce
+- Have webpack just build the entire favicon package, so user just gives a icon it wants to use
+- uninstall option
+- mutiple favicons
