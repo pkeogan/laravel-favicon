@@ -7,7 +7,7 @@ No reason to reinvent the wheel, they already have this process down, with solid
 ## Step 1
 Go to https://realfavicongenerator.net/ and follow there instructions. 
 *Make sure you check html_code as indicated in the imag below*
-<img src="https://github.com/pkeogan/laravel-favicon/master/blob/master/html_code_preview.png">
+<img src="https://github.com/pkeogan/laravel-favicon/blob/master/html_code_preview.png">
 
 ### Step 2
 Get the laravel-favicon.sh
