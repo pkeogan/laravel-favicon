@@ -1,10 +1,10 @@
 # laravel-favicon
-A Laravel SH Script that generates a favicon across different devices, browsers, and operating systems. This is done by using    realfavicongenerator.net's favicon generator. I mean, there is no reason to reinvent the wheel right? After you product your package there, this script will help you intergrate it into laravel, it does this automatcily by doing the following. 
+A Laravel SH Script that generates a favicon across different devices, browsers, and operating systems. This is done by using    realfavicongenerator.net's favicon generator. I mean, there is no reason to reinvent the wheel right? After you produce your package  on realfavicongenerator.net, this script will help you intergrate it into laravel, it does this automatcily by doing the following. 
   - downloading the package
   - extracting it to /resources/assets/favicon
   - creating /resources/views/vendor/laravel-favicon/favicon.blade.php
-  - publihing files to /public/ for use
-  - cleans up file trash it leaves mehind
+  - publish files to /public/ for use
+  - cleans up file trash it leaves behind
   
 After this is done, you may use the blade call below to insert your favicon to your site
 ```
