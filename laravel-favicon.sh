@@ -1,8 +1,8 @@
 #!/bin/bash
 # Ask the user for their name
 
-echo Hello, who am I talking to?
+echo Where is the location of the favicon package? (ensure you included htlm_code)
 
 read varname
 
-echo It\'s nice to meet you $varname
+echo link: $varname
